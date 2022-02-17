@@ -1,5 +1,12 @@
 
 $(function () {
+    if($(location).attr('href').indexOf('/login') !== -1){
+        localStorage.removeItem('token')
+        // console.log(options.url.indexOf('info'))
+    }
+    $(window).bind('hashchange',function(){
+        localStorage.removeItem('token')
+    })
     // 点击去注册的连接
     $('#link_reg').on('click',function() {
         $('.login-box').hide()
