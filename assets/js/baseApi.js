@@ -8,10 +8,10 @@ $.ajaxPrefilter(function(options){
         // console.log(options.url.indexOf('info'))
     }
     options.complete=function(res){
-        if(res.responseJSON.status !== 0){
-            localStorage.removeItem('token')
-            location.href = './login.html'
-        }
+        // if(res.responseJSON.status !== 0){
+        //     localStorage.removeItem('token')
+        //     location.href = './login.html'
+        // }
     }
     
 })

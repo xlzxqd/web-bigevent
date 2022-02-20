@@ -34,7 +34,7 @@ function getUserinfo() {
 
 function renderAvatar(user) {
     var name = user.nikename || user.username
-    $('#welcome').html('欢迎&nbsp;&nbsp;&nbsp;&nbsp'+name)
+    $('#welcome').html('欢迎&nbsp;&nbsp;&nbsp;'+name)
     if(user.user_pic !== null){
         $('.layui-nav-img').attr('src',user.user_pic).show()
         $('.text-avatar').hide()
